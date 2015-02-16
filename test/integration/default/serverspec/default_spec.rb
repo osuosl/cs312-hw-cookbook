@@ -10,7 +10,7 @@ end
 
 describe file('/home/centos/.bashrc') do
   it { should be_file }
-  its(:content) { should match %r{PATH=$PATH:/opt/chef/bin} }
+  its(:content) { should match %r{PATH=\$PATH:/opt/chef/bin} }
   its(:content) { should match %r{CDPATH=/home/centos} }
 end
 
