@@ -2,7 +2,7 @@ require 'serverspec'
 
 set :background, :exec
 
-%w(vim emacs zsh ksh).each do |p|
+%w(vim-common emacs zsh ksh).each do |p|
   describe package(p) do
     it { should be_installed }
   end
