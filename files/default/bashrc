@@ -1,0 +1,2 @@
+export PATH=$PATH:/opt/chef/bin
+export CDPATH=/home/centos
